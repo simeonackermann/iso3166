@@ -2,10 +2,10 @@
     "name": "simeonackermann/iso3166",
     "description": "ISO 3166-1 PHP Library with multiple languages",
     "autoload": {
-        "psr-4": { "League\\ISO3166\\": "src" }
+        "psr-4": { "Simeonackermann\\ISO3166\\": "src" }
     },
     "autoload-dev": {
-        "psr-4": { "League\\ISO3166\\": "tests" }
+        "psr-4": { "Simeonackermann\\ISO3166\\": "tests" }
     },
     "require": {
         "php": "^7.0"
