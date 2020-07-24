@@ -168,6 +168,8 @@ final class ISO3166 implements \Countable, \IteratorAggregate, ISO3166DataProvid
     {
         Guards::guardAgainstInvalidLanguage($language);
 
+        $language = strtolower($language);
+
         if (!in_array($language, $this->getLanguages())) {
             throw new DomainException(sprintf(
                 'Given language "%s" not available. Expected one of: %s',
