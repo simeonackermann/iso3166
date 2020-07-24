@@ -51,6 +51,10 @@ The currency (part of the origin library) is currently not available.
 
 See also [iso3166.thephpleague.com/using](https://iso3166.thephpleague.com/using) section of the origin documentation.
 
+## Data
+
+The country data is based on [Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-1), gathered and shaped from [stefangabos/world_countries](https://github.com/stefangabos/world_countries/).
+
 ## What is ISO 3166-1
 
 > ISO 3166-1 is part of the ISO 3166 standard published by the International Organization for Standardization (ISO), and defines codes for the names of countries, dependent territories, and special areas of geographical interest. The official name of the standard is Codes for the representation of names of countries and their subdivisions – Part 1: Country codes. It defines three sets of country codes:
