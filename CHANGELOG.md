@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.1.6] - 2020-07-24
+
+* New: implement multiple languages
+
 ## [2.1.5] - 2020-01-29
 
 * Changed: added a common ISO3166Exception interface ([#53]).
