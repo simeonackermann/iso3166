@@ -1,10 +1,55 @@
-# league/iso3166
+# ISO3166 multi language
 
-A PHP library providing ISO 3166-1 data.
+Fork of [thephpleague/iso3166](https://github.com/thephpleague/iso3166) PHP library providing ISO 3166-1 country data with support of multiple languages.
 
-[![Build Status](https://travis-ci.com/thephpleague/iso3166.svg?branch=master)](https://travis-ci.com/thephpleague/iso3166)
-[![Code Coverage](https://codecov.io/gh/thephpleague/iso3166/branch/master/graph/badge.svg)](https://codecov.io/gh/thephpleague/iso3166)
-![License](https://img.shields.io/github/license/thephpleague/iso3166.svg)
+Currently supported languages: English, German, France, Russian, Arabic
+
+## Installing
+
+``` sh
+$ composer require simeonackermann/iso3166
+```
+
+## Using
+
+Quick guide with custom language:
+
+``` php
+$ISO3166 = new League\ISO3166\ISO3166;
+$ISO3166->setLanguage('de');
+$data = $ISO3166->alpha3('nld');
+```
+
+Data sample:
+
+``` php
+[
+    'name' => 'Niederlande',
+    'alpha2' => 'NL',
+    'alpha3' => 'NLD',
+    'numeric' => '528'
+]
+```
+
+All available languages:
+```php
+// en, de, fr, ru, ar, ...
+$languages = (new League\ISO3166\ISO3166)->getLanguages();
+
+```
+
+You still can use all methods with default language:
+
+``` php
+$data = (new League\ISO3166\ISO3166)->name($name);
+$data = (new League\ISO3166\ISO3166)->alpha2($alpha2);
+$data = (new League\ISO3166\ISO3166)->alpha3($alpha3);
+$data = (new League\ISO3166\ISO3166)->numeric($numeric);
+```
+
+The currency (part of the origin library) is currently not available.
+
+See also [iso3166.thephpleague.com/using](https://iso3166.thephpleague.com/using) section of the origin documentation.
 
 ## What is ISO 3166-1
 
@@ -14,39 +59,6 @@ A PHP library providing ISO 3166-1 data.
 > * ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.
 >
 > *-- [Wikipedia](http://en.wikipedia.org/wiki/ISO_3166-1)*
-
-## Installing
-
-``` sh
-$ composer require league/iso3166
-```
-
-## Using
-
-See [using](https://iso3166.thephpleague.com/using) section of the documentation.
-
-Quick guide:
-
-``` php
-$data = (new League\ISO3166\ISO3166)->name($name);
-$data = (new League\ISO3166\ISO3166)->alpha2($alpha2);
-$data = (new League\ISO3166\ISO3166)->alpha3($alpha3);
-$data = (new League\ISO3166\ISO3166)->numeric($numeric);
-```
-
-Data sample:
-
-``` php
-[
-    'name' => 'Netherlands',
-    'alpha2' => 'NL',
-    'alpha3' => 'NLD',
-    'numeric' => '528',
-    'currency' => [
-        'EUR',
-    ]
-]
-```
 
 ## Contributing
 
