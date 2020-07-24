@@ -34,17 +34,17 @@ Data sample:
 All available languages:
 ```php
 // en, de, fr, ru, ar, ...
-$languages = (new League\ISO3166\ISO3166)->getLanguages();
+$languages = (new Simeonackermann\ISO3166\ISO3166)->getLanguages();
 
 ```
 
 You still can use all methods with default language:
 
 ``` php
-$data = (new League\ISO3166\ISO3166)->name($name);
-$data = (new League\ISO3166\ISO3166)->alpha2($alpha2);
-$data = (new League\ISO3166\ISO3166)->alpha3($alpha3);
-$data = (new League\ISO3166\ISO3166)->numeric($numeric);
+$data = (new Simeonackermann\ISO3166\ISO3166)->name($name);
+$data = (new Simeonackermann\ISO3166\ISO3166)->alpha2($alpha2);
+$data = (new Simeonackermann\ISO3166\ISO3166)->alpha3($alpha3);
+$data = (new Simeonackermann\ISO3166\ISO3166)->numeric($numeric);
 ```
 
 The currency (part of the origin library) is currently not available.
