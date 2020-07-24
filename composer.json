@@ -1,6 +1,6 @@
 {
     "name": "simeonackermann/iso3166",
-    "description": "ISO 3166-1 PHP Library with multple languages",
+    "description": "ISO 3166-1 PHP Library with multiple languages",
     "autoload": {
         "psr-4": { "League\\ISO3166\\": "src" }
     },
