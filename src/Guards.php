@@ -98,4 +98,27 @@ final class Guards
             );
         }
     }
+
+    /**
+     * Asset that input looks like a language key
+     *
+     * @param string $language
+     *
+     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \League\ISO3166\Exception\DomainException if input does not look like a numeric key
+     */
+    public static function guardAgainstInvalidLanguage($language)
+    {
+        if (!is_string($language)) {
+            throw new InvalidArgumentException(
+                sprintf('Expected $language to be of type string, got: %s', gettype($language))
+            );
+        }
+
+        if (!preg_match('/^[a-zA-Z]{2}$/', $language)) {
+            throw new DomainException(
+                sprintf('Not a valid language key: %s', $language)
+            );
+        }
+    }
 }
