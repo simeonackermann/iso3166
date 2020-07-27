@@ -7,7 +7,7 @@ Currently supported languages: English, German, France, Russian, Arabic
 ## Installing
 
 ``` sh
-$ composer require simeonackermann/iso3166
+$ composer require donsi/iso3166
 ```
 
 ## Using
@@ -15,7 +15,7 @@ $ composer require simeonackermann/iso3166
 Quick guide with custom language:
 
 ``` php
-$ISO3166 = new League\ISO3166\ISO3166;
+$ISO3166 = new Donsi\ISO3166\ISO3166;
 $ISO3166->setLanguage('de');
 $data = $ISO3166->alpha3('nld');
 ```
@@ -34,17 +34,17 @@ Data sample:
 All available languages:
 ```php
 // en, de, fr, ru, ar, ...
-$languages = (new Simeonackermann\ISO3166\ISO3166)->getLanguages();
+$languages = (new Donsi\ISO3166\ISO3166)->getLanguages();
 
 ```
 
 You still can use all methods with default language:
 
 ``` php
-$data = (new Simeonackermann\ISO3166\ISO3166)->name($name);
-$data = (new Simeonackermann\ISO3166\ISO3166)->alpha2($alpha2);
-$data = (new Simeonackermann\ISO3166\ISO3166)->alpha3($alpha3);
-$data = (new Simeonackermann\ISO3166\ISO3166)->numeric($numeric);
+$data = (new Donsi\ISO3166\ISO3166)->name($name);
+$data = (new Donsi\ISO3166\ISO3166)->alpha2($alpha2);
+$data = (new Donsi\ISO3166\ISO3166)->alpha3($alpha3);
+$data = (new Donsi\ISO3166\ISO3166)->numeric($numeric);
 ```
 
 The currency (part of the origin library) is currently not available.
@@ -70,7 +70,7 @@ Feel free to submit a pull request or create an issue.
 
 ## License
 
-league/iso3166 is licensed under the MIT license.
+donsi/iso3166 is licensed under the MIT license.
 
 ## Source(s)
 

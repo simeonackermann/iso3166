@@ -7,10 +7,10 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace League\ISO3166;
+namespace Donsi\ISO3166;
 
-use League\ISO3166\Exception\DomainException;
-use League\ISO3166\Exception\InvalidArgumentException;
+use Donsi\ISO3166\Exception\DomainException;
+use Donsi\ISO3166\Exception\InvalidArgumentException;
 
 final class Guards
 {
@@ -19,7 +19,7 @@ final class Guards
      *
      * @param string $name
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
      */
     public static function guardAgainstInvalidName($name)
     {
@@ -35,8 +35,8 @@ final class Guards
      *
      * @param string $alpha2
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like an alpha2 key
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like an alpha2 key
      */
     public static function guardAgainstInvalidAlpha2($alpha2)
     {
@@ -58,8 +58,8 @@ final class Guards
      *
      * @param string $alpha3
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like an alpha3 key
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like an alpha3 key
      */
     public static function guardAgainstInvalidAlpha3($alpha3)
     {
@@ -81,8 +81,8 @@ final class Guards
      *
      * @param string $numeric
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like a numeric key
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like a numeric key
      */
     public static function guardAgainstInvalidNumeric($numeric)
     {
@@ -104,8 +104,8 @@ final class Guards
      *
      * @param string $language
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like a numeric key
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like a numeric key
      */
     public static function guardAgainstInvalidLanguage($language)
     {

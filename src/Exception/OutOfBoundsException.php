@@ -7,7 +7,7 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace League\ISO3166\Exception;
+namespace Donsi\ISO3166\Exception;
 
 final class OutOfBoundsException extends \OutOfBoundsException implements ISO3166Exception
 {

@@ -1,16 +1,17 @@
 <?php
 
 /*
+ * (c) Simeon Ackermann
  * (c) Rob Bast <rob.bast@gmail.com>
  *
  * For the full copyright and license information, please view
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace League\ISO3166;
+namespace Donsi\ISO3166;
 
-use League\ISO3166\Exception\DomainException;
-use League\ISO3166\Exception\OutOfBoundsException;
+use Donsi\ISO3166\Exception\DomainException;
+use Donsi\ISO3166\Exception\OutOfBoundsException;
 
 final class ISO3166 implements \Countable, \IteratorAggregate, ISO3166DataProvider
 {
@@ -93,7 +94,7 @@ final class ISO3166 implements \Countable, \IteratorAggregate, ISO3166DataProvid
     /**
      * @param string $key
      *
-     * @throws \League\ISO3166\Exception\DomainException if an invalid key is specified
+     * @throws \Donsi\ISO3166\Exception\DomainException if an invalid key is specified
      *
      * @return \Generator
      */
@@ -201,7 +202,7 @@ final class ISO3166 implements \Countable, \IteratorAggregate, ISO3166DataProvid
      * @param string $key
      * @param string $value
      *
-     * @throws \League\ISO3166\Exception\OutOfBoundsException if key does not exist in dataset
+     * @throws \Donsi\ISO3166\Exception\OutOfBoundsException if key does not exist in dataset
      *
      * @return array
      */

@@ -7,11 +7,11 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace League\ISO3166;
+namespace Donsi\ISO3166;
 
-use League\ISO3166\Exception\DomainException;
-use League\ISO3166\Exception\InvalidArgumentException;
-use League\ISO3166\Exception\OutOfBoundsException;
+use Donsi\ISO3166\Exception\DomainException;
+use Donsi\ISO3166\Exception\InvalidArgumentException;
+use Donsi\ISO3166\Exception\OutOfBoundsException;
 use PHPUnit\Framework\TestCase;
 
 class ISO3166Test extends TestCase
@@ -230,7 +230,7 @@ class ISO3166Test extends TestCase
                 $this->assertTrue(true);
             }
         } catch (\Exception $e) {
-            $this->assertInstanceOf('League\ISO3166\Exception\DomainException', $e);
+            $this->assertInstanceOf('Donsi\ISO3166\Exception\DomainException', $e);
             $this->assertRegExp('{Invalid value for \$indexBy, got "\w++", expected one of:(?: \w++,?)+}', $e->getMessage());
         } finally {
             $this->assertTrue(isset($e));

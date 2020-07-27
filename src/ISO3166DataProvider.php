@@ -7,7 +7,7 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-namespace League\ISO3166;
+namespace Donsi\ISO3166;
 
 interface ISO3166DataProvider
 {
@@ -18,8 +18,8 @@ interface ISO3166DataProvider
      *
      * @param string $name
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
      *
      * @return array
      */
@@ -32,9 +32,9 @@ interface ISO3166DataProvider
      *
      * @param string $alpha2
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like an alpha2 key
-     * @throws \League\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like an alpha2 key
+     * @throws \Donsi\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
      *
      * @return array
      */
@@ -47,9 +47,9 @@ interface ISO3166DataProvider
      *
      * @param string $alpha3
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like an alpha3 key
-     * @throws \League\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like an alpha3 key
+     * @throws \Donsi\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
      *
      * @return array
      */
@@ -62,9 +62,9 @@ interface ISO3166DataProvider
      *
      * @param string $numeric
      *
-     * @throws \League\ISO3166\Exception\InvalidArgumentException if input is not a string
-     * @throws \League\ISO3166\Exception\DomainException if input does not look like a numeric key
-     * @throws \League\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
+     * @throws \Donsi\ISO3166\Exception\InvalidArgumentException if input is not a string
+     * @throws \Donsi\ISO3166\Exception\DomainException if input does not look like a numeric key
+     * @throws \Donsi\ISO3166\Exception\OutOfBoundsException if input does not exist in dataset
      *
      * @return array
      */
