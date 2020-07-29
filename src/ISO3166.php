@@ -190,8 +190,9 @@ final class ISO3166 implements \Countable, \IteratorAggregate, ISO3166DataProvid
      */
     private function getCountriesData()
     {
-        require_once __DIR__ . '/Data/' . $this->language . '.php';
-        $this->countries = $world;
+        if ((include __DIR__ . '/Data/' . $this->language . '.php') == true) {
+            $this->countries = $world;
+        }
     }
 
     /**
